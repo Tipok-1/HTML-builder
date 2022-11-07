@@ -38,5 +38,5 @@ rl.on('line',(data)=>{
     check_exit(data);
 })
 rl.on('close',()=>{
-    console.log('Ввод завершён');
+    console.log('\nВвод завершён');
 })

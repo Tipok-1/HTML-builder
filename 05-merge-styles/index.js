@@ -29,7 +29,7 @@ fs.open(path.resolve(__dirname,"project-dist","bundle.css"),'w')
         if(path.extname(element) == '.css')
         {
             let info = await fs.readFile(element,{encoding:'utf-8'});
-            hundle.appendFile(info, {encoding:'utf-8'});
+            hundle.appendFile(info +'\n', {encoding:'utf-8'});
         }
     });
 })
